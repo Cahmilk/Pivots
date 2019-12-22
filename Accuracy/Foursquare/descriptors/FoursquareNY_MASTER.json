@@ -1,0 +1,101 @@
+{
+   "readsDesc": [
+		{
+          "order": 1,
+          "type": "nominal",
+          "text": "day"
+        },
+	    {
+          "order": 2,
+          "type": "nominal",
+          "text": "poi"
+        },
+		{
+          "order": 3,
+          "type": "nominal",
+          "text": "category"
+        },
+		{
+          "order": 4,
+          "type": "numeric",
+          "text": "price"
+        },
+		{
+          "order": 5,
+          "type": "numeric",
+          "text": "rating"
+        },
+		{
+          "order": 6,
+          "type": "nominal",
+          "text": "weather"
+        },
+		{
+          "order": 7,
+          "type": "space2d",
+          "text": "space"
+        },
+		{
+          "order": 8,
+          "type": "numeric",
+          "text": "time"
+        }
+      ],
+    "pointFeaturesDesc": [
+      ],
+    "subtrajectoryFeaturesDesc": [
+	  ],
+    "trajectoryFeaturesDesc": [
+      ],
+    "pointComparisonDesc": {
+      "pointDistance": "euclidean",
+      "featureComparisonDesc": [			
+			{
+			  "distance": "euclidean",
+			  "maxValue": -1,
+			  "text": "space"
+			},
+			{
+			  "distance": "difference",
+			  "maxValue": -1,
+			  "text": "time"
+			},
+			{
+			  "distance": "weekdaydist",
+			  "text": "day"
+			},
+			{
+			  "distance": "difference",
+			  "maxValue": -1,
+			  "text": "price"
+			},
+			{
+			  "distance": "difference",
+			  "maxValue": -1,
+			  "text": "rating"
+			},
+			{
+			  "distance": "equals",
+			  "text": "weather"
+			},
+			{
+			  "distance": "equals",
+			  "text": "poi"
+			},
+			{
+			  "distance": "equals",
+			  "text": "category"
+			}
+			
+		]
+    },
+    "subtrajectoryComparisonDesc": {
+      "subtrajectoryDistance": "euclidean",
+      "featureComparisonDesc": [
+			{
+			  "distance": "euclidean",
+			  "text": "points"
+			}
+		]
+    }   	
+}
